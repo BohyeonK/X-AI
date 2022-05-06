@@ -47,7 +47,7 @@
     
     레이블이 지정되지 않은 데이터 U에 대해 likelihood를 최대화하는 방향으로 학습 진행
     
-    ![Untitled](Untitled.png)
+    ![Untitled 1](https://user-images.githubusercontent.com/104570858/167054408-c88a19a6-5edf-469e-bd69-9022c601f595.png)
     
     - 윈도우 크기 = k
     - θ 에 대해 conditional probability가 계산됨
@@ -55,16 +55,16 @@
     - multi-layer transformer decoder 사용
     - multi-headed self-attention연산을 모든 입력 토큰에 대해 수행하고, position-wise feedforward layer의 입력으로 제공함
 
-![Untitled](Untitled%201.png)
+![Untitled](https://user-images.githubusercontent.com/104570858/167054459-192beab5-1393-40cc-8a0d-0bb87532b830.png)
 
 - Unsupervised fine-tuning
     
     supervised model의 generalization을 향상시킴과 동시에 빠르게 수렴 가능
     
 
-![Untitled](Untitled%202.png)
+![Untitled](https://user-images.githubusercontent.com/104570858/167054466-d6ba1cd5-67bd-41cb-ac34-0e4c06fb6d19.png)
 
-![Untitled](Untitled%203.png)
+![Untitled](https://user-images.githubusercontent.com/104570858/167054471-8450e8c7-3f98-4767-96a2-e100a264b7b3.png)
 
 - 옴
     - Textual entailment : premise p와 hypothesis h를 delimiter token인 $로 구분
@@ -79,20 +79,20 @@
 
 - Natural Language Inference (NLI)
     
-    ![Untitled](Untitled%205.png)
+    ![Untitled](https://user-images.githubusercontent.com/104570858/167054474-af8e7b98-a3a2-41c8-b1a7-286b26c8efb1.png)
     
 - Question answering and commonsense reasoning
 
-![Untitled](Untitled%206.png)
+![Untitled](https://user-images.githubusercontent.com/104570858/167054480-0f9fd772-f626-4538-ad7f-7ee90df838a6.png)
 
 - Semantic similarity
     - Classification
 
-![Untitled](Untitled%207.png)
+![Untitled](https://user-images.githubusercontent.com/104570858/167054484-4d3ee933-708a-4f57-9307-58e7ecd09c3.png)
 
 ### 5. Analysis
 
-![Untitled](Untitled%208.png)
+![Untitled](https://user-images.githubusercontent.com/104570858/167054488-56ab5c64-8ca7-4d01-a1aa-616ee4ce14ed.png)
 
 - Impact of number of layers transferred
     - transfer하는 층의 개수가 많을수록 성능이 더 좋아짐
