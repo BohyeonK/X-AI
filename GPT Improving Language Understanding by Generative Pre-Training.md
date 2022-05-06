@@ -1,7 +1,3 @@
-# GPT
-
-Created: 2022년 5월 5일 오후 9:32
-Last Edited Time: 2022년 5월 6일 오전 10:41
 
 # GPT
 
@@ -79,7 +75,7 @@ Last Edited Time: 2022년 5월 6일 오전 10:41
 
 - Supervised fine-tuning
 
-![Untitled](Untitled%204.png)
+![Untitled](https://www.notion.so/GPT-77c4b108f3bc414e91d00b61a8061ecd#56dd108e3b8842aa8facbf613cf8cf17.png)
 
 - Natural Language Inference (NLI)
     
