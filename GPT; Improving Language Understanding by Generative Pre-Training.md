@@ -66,10 +66,9 @@
 
 ![Untitled](https://user-images.githubusercontent.com/104570858/167054471-8450e8c7-3f98-4767-96a2-e100a264b7b3.png)
 
-- 옴
-    - Textual entailment : premise p와 hypothesis h를 delimiter token인 $로 구분
-    - Similarity : similarity task의 경우, 두 입력 문장의 순서에 의미가 없기 때문에 모든 경우의 수를 고려해 element-wise addition을 통해 최종 representation을 생성
-    - Question-answering, Commonsense reasoning : context document z와 question q, 답의 집힙 ak를 입력으로 제공해 representation을 생성 후 독립적으로 모델의 입력으로 제공되고 softmax 함수를 통해 결과를 예측하게 됨
+   - Textual entailment : premise p와 hypothesis h를 delimiter token인 $로 구분
+   - Similarity : similarity task의 경우, 두 입력 문장의 순서에 의미가 없기 때문에 모든 경우의 수를 고려해 element-wise addition을 통해 최종 representation을 생성
+   - Question-answering, Commonsense reasoning : context document z와 question q, 답의 집힙 ak를 입력으로 제공해 representation을 생성 후 독립적으로 모델의 입력으로 제공되고 softmax 함수를 통해 결과를 예측하게 됨
 
 ### 4. Experiments
 
@@ -88,7 +87,7 @@
 - Semantic similarity
     - Classification
 
-![Untitled](https://user-images.githubusercontent.com/104570858/167054484-4d3ee933-708a-4f57-9307-58e7ecd09c3.png)
+![Untitled](https://user-images.githubusercontent.com/104570858/167054484-4d3ee933-708a-4f57-9307-58e7ecd09c3d.png)
 
 ### 5. Analysis
 
