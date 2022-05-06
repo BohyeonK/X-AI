@@ -47,7 +47,8 @@
     
     레이블이 지정되지 않은 데이터 U에 대해 likelihood를 최대화하는 방향으로 학습 진행
     
-    ![Untitled 1](https://user-images.githubusercontent.com/104570858/167054408-c88a19a6-5edf-469e-bd69-9022c601f595.png)
+    ![Untitled](https://user-images.githubusercontent.com/104570858/167055065-a0bff163-ddc5-4b28-97dc-c297ca089a76.png)
+
     
     - 윈도우 크기 = k
     - θ 에 대해 conditional probability가 계산됨
@@ -55,16 +56,16 @@
     - multi-layer transformer decoder 사용
     - multi-headed self-attention연산을 모든 입력 토큰에 대해 수행하고, position-wise feedforward layer의 입력으로 제공함
 
-![Untitled](https://user-images.githubusercontent.com/104570858/167054459-192beab5-1393-40cc-8a0d-0bb87532b830.png)
+    ![Untitled 1](https://user-images.githubusercontent.com/104570858/167054408-c88a19a6-5edf-469e-bd69-9022c601f595.png)
 
 - Unsupervised fine-tuning
     
     supervised model의 generalization을 향상시킴과 동시에 빠르게 수렴 가능
     
+    ![Untitled](https://user-images.githubusercontent.com/104570858/167054459-192beab5-1393-40cc-8a0d-0bb87532b830.png)
+    ![Untitled](https://user-images.githubusercontent.com/104570858/167054466-d6ba1cd5-67bd-41cb-ac34-0e4c06fb6d19.png)
 
-![Untitled](https://user-images.githubusercontent.com/104570858/167054466-d6ba1cd5-67bd-41cb-ac34-0e4c06fb6d19.png)
 
-![Untitled](https://user-images.githubusercontent.com/104570858/167054471-8450e8c7-3f98-4767-96a2-e100a264b7b3.png)
 
    - Textual entailment : premise p와 hypothesis h를 delimiter token인 $로 구분
    - Similarity : similarity task의 경우, 두 입력 문장의 순서에 의미가 없기 때문에 모든 경우의 수를 고려해 element-wise addition을 통해 최종 representation을 생성
@@ -74,7 +75,8 @@
 
 - Supervised fine-tuning
 
-![Untitled](https://www.notion.so/GPT-77c4b108f3bc414e91d00b61a8061ecd#56dd108e3b8842aa8facbf613cf8cf17.png)
+    ![Untitled](https://user-images.githubusercontent.com/104570858/167054471-8450e8c7-3f98-4767-96a2-e100a264b7b3.png)
+    ![Untitled](https://www.notion.so/GPT-77c4b108f3bc414e91d00b61a8061ecd#56dd108e3b8842aa8facbf613cf8cf17.png)
 
 - Natural Language Inference (NLI)
     
@@ -87,7 +89,7 @@
 - Semantic similarity
     - Classification
 
-![Untitled](https://user-images.githubusercontent.com/104570858/167054484-4d3ee933-708a-4f57-9307-58e7ecd09c3d.png)
+    ![Untitled](https://user-images.githubusercontent.com/104570858/167054484-4d3ee933-708a-4f57-9307-58e7ecd09c3d.png)
 
 ### 5. Analysis
 
