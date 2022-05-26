@@ -23,7 +23,7 @@ Last Edited Time: 2022년 5월 27일 오전 12:00
 - Mask R-CNN에서는 RoI Align을 사용해 이러한 단점들을 해결
 - Instance Segment
     
-    ![Untitled](Mask%20R-CNN%201525f20d86604cb8b0333cfcb2598f97/Untitled.png)
+    ![Untitled](https://user-images.githubusercontent.com/104570858/170519617-4932d1db-a54e-40b1-9dad-9376944332dc.png)
     
     - 인스턴스 분할은 이미지의 모든 객체를 올바르게 감지하는 동시에 각 인스턴스를 정확하게 분할해야 하기 때문에 어려움
     - bounding box를 사용해 개별 object를 분류하고 각 개체를 지역화하며 각 픽셀을 구별하지 않고 고정된 범주 집합으로 분류하고자 함
@@ -34,11 +34,11 @@ Last Edited Time: 2022년 5월 27일 오전 12:00
         - 작은 계산 오버헤드만 추가하므로 빠른 실험 가능
 - Segmentation
     
-    ![Untitled](Mask%20R-CNN%201525f20d86604cb8b0333cfcb2598f97/Untitled%201.png)
+    ![Untitled](https://user-images.githubusercontent.com/104570858/170519624-61782d24-8a8f-463b-9933-00b9355471db.png)
     
     - Semantic segmentation
         
-        ![Untitled](Mask%20R-CNN%201525f20d86604cb8b0333cfcb2598f97/Untitled%202.png)
+        ![Untitled](https://user-images.githubusercontent.com/104570858/170519627-83a431b2-62b9-4354-b765-76a50e9c5cb2.png)
         
         - 사진에 있는 모든 픽셀을 해당하는 class로 분류하는 것
         - 동일한 class의 객체는 따로 분류하지 않고, 그 픽셀 자체가 어떤 class에 속하는지만 분류함
@@ -46,14 +46,14 @@ Last Edited Time: 2022년 5월 27일 오전 12:00
         - FCN
     - instance segmentation
         
-        ![Untitled](Mask%20R-CNN%201525f20d86604cb8b0333cfcb2598f97/Untitled%203.png)
+        ![Untitled](https://user-images.githubusercontent.com/104570858/170519630-6fca2450-fcc7-4de4-b567-fcb8a4d69806.png)
         
         - Semantic segmentation과 비교했을 때 각각의 같은 class의 object를 다른 label로 취급 (class가 부여되지는 않음)
         - 각자 객체별로 masking 수행
         - Mask R-CNN
     - panoptic segmentation
         
-        ![Untitled](Mask%20R-CNN%201525f20d86604cb8b0333cfcb2598f97/Untitled%204.png)
+        ![Untitled]([Mask%20R-CNN%201525f20d86604cb8b0333cfcb2598f97/Untitled%204.png](https://user-images.githubusercontent.com/104570858/170519632-2ab57b09-ad64-468b-a340-aa35eee9e3f6.png))
         
         - Semantic segmentation + Instance Segmentation가 합쳐진 것
         - object와 class와 instance를 함께 구분
@@ -67,7 +67,7 @@ R-CNN
 - Faster R-CNN은 RPN(Region Proposal Network)으로 attention 메커니즘을 학습해 이 스트림을 발전시킴
     - RPN
         
-        ![Untitled](Mask%20R-CNN%201525f20d86604cb8b0333cfcb2598f97/Untitled%205.png)
+        ![Untitled](https://user-images.githubusercontent.com/104570858/170519634-264da3f4-adbe-497f-985f-12bd3da4a3de.png)
         
         CNN에서 뽑아낸 feature map을 Region Proposal을 생성하기 위해 nxn window를 sliding window시키는 방식
         
@@ -87,9 +87,9 @@ R-CNN
             1. 동일한 클래스에 대해 높은-낮은 confidence 순서로 정렬
             2. 가장 confidence가 높은 bounding box와 IOU가 일정 이상인 bounding box는 동일한 물체를 detect했다고 판단해 지움
         
-        ![Untitled](Mask%20R-CNN%201525f20d86604cb8b0333cfcb2598f97/Untitled%206.png)
+        ![Untitled](https://user-images.githubusercontent.com/104570858/170519636-fe5724dd-6e86-4be2-9ef1-a31f79adf9c3.png)
         
-        ![Untitled](Mask%20R-CNN%201525f20d86604cb8b0333cfcb2598f97/Untitled%207.png)
+        ![Untitled](https://user-images.githubusercontent.com/104570858/170519640-fc480443-a88d-408b-8f34-0ea76f2de9e2.png)
         
     
     - R-CNN
@@ -139,7 +139,7 @@ Mask R-CNN은 Faster R-CNN의 두 개의 출력(클래스 레이블, bounding bo
     
     각 RoI에 대한 multi-task loss를 적용 (서로 독립)
     
-    ![Untitled](Mask%20R-CNN%201525f20d86604cb8b0333cfcb2598f97/Untitled%208.png)
+    ![Untitled](https://user-images.githubusercontent.com/104570858/170519643-5a6adddf-0cbc-405d-b97d-ed9b15575ba4.png)
     
     ｍａｓｋ　ｂｒａｎｃｈ　：　Km2차원 (K : class 개수, m : 이미지 해상도)
     
@@ -167,11 +167,11 @@ Mask R-CNN은 Faster R-CNN의 두 개의 출력(클래스 레이블, bounding bo
 - RoIAlign
     - bilinear interpolation 연산을 사용해 각 RoI bin의 샘플링된 4개의 위치에서 input feature의 정확한 값을 계산
         
-        ![Untitled](Mask%20R-CNN%201525f20d86604cb8b0333cfcb2598f97/Untitled%209.png)
+        ![Untitled](https://user-images.githubusercontent.com/104570858/170519647-7dd85c5a-41fd-473b-a0e6-f63aaaf6100c.png)
         
         - bilinear interpolation
             
-            ![Untitled](Mask%20R-CNN%201525f20d86604cb8b0333cfcb2598f97/Untitled%2010.png)
+            ![Untitled](https://user-images.githubusercontent.com/104570858/170519649-677a7cf0-e184-4b2e-8acc-00549e825d6d.png)
             
     - 결과를 max or average
     - Faster R-CNN에서는 양자화가 사용되지 않음　（모델의　크기를　줄이지　못함）
@@ -188,7 +188,7 @@ Mask R-CNN은 Faster R-CNN의 두 개의 출력(클래스 레이블, bounding bo
     - Faster R-CNN의 Head(Classification and Regression)에 Mask branch를 추가
     - backbone(ResNet, FPN)에 따라 Head의 구조가 달라짐
         
-        ![Untitled](Mask%20R-CNN%201525f20d86604cb8b0333cfcb2598f97/Untitled%2011.png)
+        ![Untitled](https://user-images.githubusercontent.com/104570858/170519650-f89bed23-06a9-4562-8ece-f3e054a0f241.png)
         
 
 ### Implementation Details
@@ -212,15 +212,15 @@ Mask R-CNN은 Faster R-CNN의 두 개의 출력(클래스 레이블, bounding bo
 
 모든 기존의 SOTA 보다 뛰어난 성능을 보임
 
-![Untitled](Mask%20R-CNN%201525f20d86604cb8b0333cfcb2598f97/Untitled%2012.png)
+![Untitled](https://user-images.githubusercontent.com/104570858/170519652-21b1af70-392a-44dc-9bf5-cf3ea98e8ab3.png)
 
-![Untitled](Mask%20R-CNN%201525f20d86604cb8b0333cfcb2598f97/Untitled%2013.png)
+![Untitled](https://user-images.githubusercontent.com/104570858/170519654-9c500adc-bc7d-4221-98ff-0b645342670f.png)
 
-![Untitled](Mask%20R-CNN%201525f20d86604cb8b0333cfcb2598f97/Untitled%2014.png)
+![Untitled](https://user-images.githubusercontent.com/104570858/170519657-dc25aeff-df6a-4f76-aef3-a445d11e18f4.png)
 
 ### Bouding Box Detection Result
 
-![Untitled](Mask%20R-CNN%201525f20d86604cb8b0333cfcb2598f97/Untitled%2015.png)
+![Untitled](https://user-images.githubusercontent.com/104570858/170519662-84514c45-5d6a-4863-a3a9-79b831372328.png)
 
 ### Timing
 
@@ -238,7 +238,7 @@ Mask R-CNN을 인간 pose estimation으로 확장가능
     
     ⇒ Mask R-CNN의 유연성
     
-    ![Untitled](Mask%20R-CNN%201525f20d86604cb8b0333cfcb2598f97/Untitled%2016.png)
+    ![Untitled](https://user-images.githubusercontent.com/104570858/170519664-77291a2b-c9d8-4315-b201-e24152a53045.png)
     
 
 ### Implementation Details
