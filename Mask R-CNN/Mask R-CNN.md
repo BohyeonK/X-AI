@@ -53,7 +53,7 @@ Last Edited Time: 2022년 5월 27일 오전 12:00
         - Mask R-CNN
     - panoptic segmentation
         
-        ![Untitled]([Mask%20R-CNN%201525f20d86604cb8b0333cfcb2598f97/Untitled%204.png](https://user-images.githubusercontent.com/104570858/170519632-2ab57b09-ad64-468b-a340-aa35eee9e3f6.png))
+        ![Untitled](https://user-images.githubusercontent.com/104570858/170519632-2ab57b09-ad64-468b-a340-aa35eee9e3f6.png)
         
         - Semantic segmentation + Instance Segmentation가 합쳐진 것
         - object와 class와 instance를 함께 구분
